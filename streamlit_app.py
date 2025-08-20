@@ -1,6 +1,41 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+# --- 페이지 설정 ---
+# 앱의 기본 설정을 구성합니다.
+st.set_page_config(
+    page_title="T-스핀 트레이너",
+    page_icon="🧩",
+    layout="centered", # 콘텐츠를 중앙에 배치
+    initial_sidebar_state="expanded" # 사이드바를 기본적으로 열어둠
+)
+
+# --- 메인 페이지 콘텐츠 ---
+st.title("🧩 테트리스 T-스핀 트레이너에 오신 것을 환영합니다!")
+st.write("---")
+
+st.header("이 앱은 무엇인가요?")
+st.info(
+    """
+    이 앱은 테트리스의 꽃이라 불리는 **T-스핀(T-Spin)** 기술을 배우고,
+    효과적으로 연습할 수 있도록 돕는 시뮬레이터입니다.
+    """
+)
+
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    """
+    **👈 왼쪽 사이드바에서 메뉴를 선택하여 시작하세요.**
+
+    1.  **📖 T-스핀이란?**: T-스핀의 기본 개념과 원리를 배웁니다.
+    2.  **🕹️ T-스핀 연습**: 다양한 난이도의 퍼즐을 풀며 실전 감각을 익힙니다.
+    """
+)
+
+st.write("---")
+st.subheader("💡 T-스핀이란?")
+st.write(
+    """
+    T-스핀은 T-미노(T 모양 블록)를 회전시켜 일반적인 방법으로는 들어갈 수 없는 틈새에 끼워 넣는 기술입니다.
+    이 기술을 성공시키면 일반적인 줄 제거보다 더 높은 점수를 얻을 수 있으며,
+    상대방에게 더 많은 공격 라인을 보낼 수 있어 대전(PvP)에서 매우 강력한 무기가 됩니다.
+    """
 )
